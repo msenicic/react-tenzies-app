@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+main {
+  max-width: 360px;
+  background-color: #0b2434;
+  padding: 30px 20px;
+}
+
+.container {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.dies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -9px;
+}
+
+.die {
+  width: 20%;
+  aspect-ratio: 1/1;
+  padding: 9px;
+}
+
+.inner {
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2b283a;
+  position: absolute;
+}
+
+.dot1:nth-child(1),
+.dot3:nth-child(2),
+.dot5:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot4:nth-child(1),
+.dot5:nth-child(1),
+.dot6:nth-child(1) {
+  top: 5px;
+  left: 5px;
+}
+
+.dot2:nth-child(1),
+.dot3:nth-child(1),
+.dot4:nth-child(2),
+.dot5:nth-child(2),
+.dot6:nth-child(2) {
+  top: 5px;
+  right: 5px;
+}
+
+.dot2:nth-child(2),
+.dot3:nth-child(3),
+.dot4:nth-child(3),
+.dot5:nth-child(4),
+.dot6:nth-child(5) {
+  bottom: 5px;
+  left: 5px;
+}
+
+.dot4:nth-child(4),
+.dot5:nth-child(5),
+.dot6:nth-child(6) {
+  bottom: 5px;
+  right: 5px;
+}
+
+.dot6:nth-child(3) {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dot6:nth-child(4) {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button {
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border: none;
+  outline: none;
+  width: 92px;
+  height: 36px;
+  margin-top: 25px;
+  border-radius: 3.81277px;
+  font-weight: 700;
+  font-family: 'Karla', sans-serif;
+  font-size: 16.384px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.text {
+  margin: auto;
+  margin-bottom: 23px;
+  text-align: center;
+  max-width: 95%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #2b283a;
+}
+
+.instruction {
+  font-family: 'Inter';
+  font-size: 13.1072px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #4a4e74;
+}
+
+.score {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2b283a;
+}
+
+.high-score {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b283a;
+}
